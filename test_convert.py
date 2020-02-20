@@ -1,4 +1,4 @@
-import convert as cvt
+import convertold as cvt
 
 def test_valid():								
  	assert cvt.convert(1) == 'I';
