@@ -1,11 +1,10 @@
 def convert_to_roman(n):
-    if (n.isdigit()==False):
-        return 'Please enter a number'
+    if not isinstance(n, int):
+        return "Please enter a number"
     if n < 1 or n > 3999:
-        return 'number out of range'
-        
+        return "number out of range"      
     thedict = {1:'I', 5:'V', 10:'X', 50:'L', 100:'C', 500:'D', 1000:'M'}
-    
+
     if n in thedict:
         return thedict[n]
         
