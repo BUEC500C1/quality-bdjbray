@@ -1,5 +1,5 @@
 import convert as cvt
-import pytest
+
 
 def test_valid():								
 	assert cvt.convert_to_roman(1) == 'I';
@@ -35,8 +35,6 @@ def test_valid11():
 	assert cvt.convert_to_roman(3999) == 'MMMCMXCIX';
 
 def test_valid12():
-	assert cvt.convert_to_roman(5000) =='number out of range';
+	assert cvt.convert_to_roman(5000) == "number out of range";
 
-def test_valid14():
-	assert cvt.convert_to_roman('abc')=='please enter a number';
 
