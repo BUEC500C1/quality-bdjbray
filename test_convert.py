@@ -38,9 +38,18 @@ def test_valid12():
 	assert cvt.convert_to_roman(5000) == "number out of range";
 
 def test_valid13():
-	assert cvt.convert_to_roman("abc") == "Please enter a number";
+	assert cvt.convert_to_roman(-10) == "number out of range";
 
 def test_valid14():
+	assert cvt.convert_to_roman("abc") == "Please enter a number";
+
+def test_valid15():
 	assert cvt.convert_to_roman("!!!") == "Please enter a number";
+
+def test_valid16():
+	assert cvt.convert_to_roman("") == "Please enter a number";
+
+
+
 
 
