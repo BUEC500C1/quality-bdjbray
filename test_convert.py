@@ -12,6 +12,6 @@ def test_valid():
 	assert cvt.convert_to_roman(675) == 'DCLXXV';
 	assert cvt.convert_to_roman(2002) == 'MMII';
 	assert cvt.convert_to_roman(3999) == 'MMMCMXCIX';
-	assert cvt.convert_to_roman(5000) =='out of range';
+	assert cvt.convert_to_roman(5000) =='number out of range';
 	assert cvt.convert_to_roman('!!!')=='please enter a number';
 	assert cvt.convert_to_roman('abc')=='please enter a number';
